@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>cpadmin.test_1710.my_service</groupId>
-    <artifactId>myModel</artifactId>
+    <artifactId>data</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,21 +26,16 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>My_Model</name>
+                            <name>Data</name>
                         </deployment>
                     </deployments>
-                <packageName>cpadmin.test_1710.my_service.mymodel</packageName>
+                <packageName>cpadmin.test_1710.my_service.data</packageName>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 <dependencies>
-        <dependency>
-            <groupId>cpadmin.test_1710.my_service</groupId>
-            <artifactId>data</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>

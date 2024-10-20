@@ -1,0 +1,24 @@
+
+# cpadmin.test_1710.my_service.data.Temperature
+cpadmin.test_1710.my_service.data.Temperature#concept.label = temperature
+cpadmin.test_1710.my_service.data.Temperature.cold#instance.label = cold
+cpadmin.test_1710.my_service.data.Temperature.hot#instance.label = hot
+cpadmin.test_1710.my_service.data.Temperature.warm#instance.label = warm
+
+# cpadmin.test_1710.my_service.data.Weather
+cpadmin.test_1710.my_service.data.Weather#concept.label = weather
+cpadmin.test_1710.my_service.data.Weather.Weather(int,boolean,cpadmin.test_1710.my_service.data.Temperature)#phrase.navigation = a new {weather} where {0, rain forecast} {1, storm alert} {2, temperature}
+cpadmin.test_1710.my_service.data.Weather.rainForecast#phrase.action = set the rain forecast of {this} to {rain forecast}
+cpadmin.test_1710.my_service.data.Weather.rainForecast#phrase.addition_setter = add {rain forecast} to the rain forecast of {this}
+cpadmin.test_1710.my_service.data.Weather.rainForecast#phrase.navigation = {rain forecast} of {this}
+cpadmin.test_1710.my_service.data.Weather.rainForecast#phrase.subtraction_setter = subtract {rain forecast} from the rain forecast of {this}
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.action[0] = {this} gets storm alert only if {storm alert}
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.action[1] = make it {storm alert} that {this} is storm alert
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.action[1].deprecated = true
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.navigation = {this} is storm alert
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.negative_predicate = {this} is not storm alert
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.negative_predicate_setter = {this} does not get storm alert
+cpadmin.test_1710.my_service.data.Weather.stormAlert#phrase.positive_predicate_setter = {this} gets storm alert
+cpadmin.test_1710.my_service.data.Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+cpadmin.test_1710.my_service.data.Weather.temperature#phrase.clearer = clear the temperature of {this}
+cpadmin.test_1710.my_service.data.Weather.temperature#phrase.navigation = {temperature} of {this}
