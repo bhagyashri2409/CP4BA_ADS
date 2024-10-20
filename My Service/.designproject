@@ -1,0 +1,10 @@
+{
+  "description" : "My getting started decision service.",
+  "groupId" : "cpadmin.test_1710.my_service",
+  "locale" : "en_US",
+  "properties" : {
+    "refactoringEnabled" : false,
+    "tags" : [ ]
+  },
+  "extraProperties" : { }
+}
